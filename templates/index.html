@@ -1,0 +1,14 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My First Flask Page Tony</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='assets/css/mycustom.css') }}">
+</head>
+<body>
+	<h1>Welcome Css testing! {{ fname }} {{ lname }}</h1>
+    <p>This is your first <span class='my-big-font'>HTML page </span>served by Flask.</p>
+	<script src='{{ url_for('static', filename='assets/js/mycustom.js') }}'></script>
+</body>
+</html>
